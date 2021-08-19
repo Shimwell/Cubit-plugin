@@ -144,7 +144,7 @@ function build_dagmc(){
     cd ${PLUGIN_ABS_PATH}
     mkdir -pv DAGMC/bld
     cd DAGMC
-    git clone https://github.com/svalinn/DAGMC -b develop --depth 1 --shallow-submodules
+    git clone https://github.com/pshriwise/DAGMC -b mv_cxx_std --depth 1 --shallow-submodules
     cd bld
     cmake ../DAGMC -DMOAB_DIR=${PLUGIN_ABS_PATH}/moab \
                 -DBUILD_UWUW=ON \
